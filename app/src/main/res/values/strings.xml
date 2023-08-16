@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Itaú</string>
+    <string name="password">senha eletrônica</string>
+    <string name="password_to_go">para seguir, digite sua senha eletrônica</string>
+    <string name="btn_login">acessar</string>
+    <string name="btn_itoken_cancel">cancelar</string>
+    <string name="btn_itoken_install">instalar</string>
+    <string name="changed_password">esqueci minha senha</string>
+    <string name="pix">Pix</string>
+    <string name="pix_sub">pagamentos instantâneos</string>
+    <string name="pix_transfer">transferir</string>
+    <string name="pix_qr_pay">pagar QR Code</string>
+    <string name="pix_demand">cobrar alguém</string>
+    <string name="itoken_title">Olá, você ainda não tem o iToken no app instalado.</string>
+    <string name="itoken_text">O iToken é um dispositivo utilizado para autenticar as transações no celular, computador ou telefone, garantindo a segurança e sua autenticidade.
+    Com o iToken instalado a validação é automática, você não precisa mais digitar códigos.
+    Durante as transações no Internet Bancking, você pode consultar o código direto no aplicativo, sem estar conectado à internet.
+    </string>
+    <string name="help_title">ajuda</string>
+    <string name="help_title2">como podemos te ajudar?</string>
+    <string name="help_sub"><b>dúvidas frequentes</b></string>
+    <string name="help_sub2"><b>outros aplicativos</b></string>
+    <string name="help_sub3"><b>ainda precisa de ajuda?</b></string>
+    <string name="help_sub4"><b>falar com Itaú</b></string>
+    <string name="help_sub5"><b>mais opções</b></string>
+    <string name="help_card_not_login">não consigo logar</string>
+    <string name="help_card_pix">PIX-pagamento instantâneo</string>
+    <string name="help_card_itoken">iToken</string>
+    <string name="help_card_password">Senhas</string>
+    <string name="help_card_settings">configurações de segurança</string>
+    <string name="help_card_biometria">Biometria</string>
+    <string name="help_card_phone">telefone</string>
+    <string name="help_card_place">agências</string>
+    <string name="help_card_whatsapp">WhatsApp</string>
+    <string name="help_card_whatsapp_title"><b>Experimente este canal de atendimento.</b></string>
+    <string name="help_card_whatsapp_bnt">vamos lá</string>
+    <string name="help_card_whatsapp_ombudsman">ouvidoria</string>
+    <string name="help_card_whatsapp_text">Acesse sua conta para conhecer e aceitar nossos termos de uso.
+        Depois disso você já pode conversar com a gente</string>
+    <string name="help_card_other_app_itau">Itaú Personnalité</string>
+    <string name="help_card_other_app_itaucard">Itaucard</string>
+    <string name="help_card_other_app_open">abrir</string>
+    <string name="help_card_other_app_install">instalar</string>
+    <string name="help_card_other_app_more">ver mais apps</string>
+    <string name="help_card_more_securet">esse aplicativo é seguro?</string>
+    <string name="help_card_more_term">termo de uso</string>
+    <string name="help_card_more_consum_protect">órgãos de defesa do consumidor</string>
+    <string name="version">versão</string>
+    <string name="update">atualização em</string>
+</resources>
