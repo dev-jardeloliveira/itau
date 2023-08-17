@@ -3,6 +3,7 @@
     <style name="Base.Theme.Itau_kt" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/primary</item>
+        <item name="android:windowSplashScreenBackground">@color/primary</item>
     </style>
 
     <style name="Theme.Itau_kt" parent="Base.Theme.Itau_kt" />
