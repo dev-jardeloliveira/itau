@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/pix"
+        android:icon="@drawable/ic_pix_white"
+        android:title="Pix"/>
+    <item android:id="@+id/itoken"
+        android:icon="@drawable/ic_error"
+        android:title="iToken"/>
+    <item android:id="@+id/help"
+        android:icon="@drawable/ic_error"
+        android:title="ajuda"/>
+</menu>

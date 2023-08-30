@@ -1,11 +1,14 @@
 <resources>
+    <string name="account_name"><b>olá, André</b></string>
+    <string name="account_name_first_letter"><b>A</b></string>
+    <string name="account">ag ••81 c/c •••61-6</string>
     <string name="app_name">Itaú</string>
-    <string name="password">senha eletrônica</string>
+    <string name="password"><b>senha eletrônica</b></string>
     <string name="password_to_go">para seguir, digite sua senha eletrônica</string>
     <string name="btn_login">acessar</string>
     <string name="btn_itoken_cancel">cancelar</string>
     <string name="btn_itoken_install">instalar</string>
-    <string name="changed_password">esqueci minha senha</string>
+    <string name="changed_password"><b>esqueci minha senha</b></string>
     <string name="pix">Pix</string>
     <string name="pix_sub">pagamentos instantâneos</string>
     <string name="pix_transfer">transferir</string>
