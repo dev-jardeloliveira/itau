@@ -7,4 +7,9 @@
     </style>
 
     <style name="Theme.Itau_kt" parent="Base.Theme.Itau_kt" />
+    <style name="inputLineBotoom" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="boxBackgroundColor">@color/primary</item>
+    </style>
 </resources>
