@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary"
+    android:background="@drawable/background_default"
     android:fitsSystemWindows="true"
     tools:context=".PublicActivity">
 
@@ -76,7 +76,7 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:gravity="center"
             android:text="@string/password"
             android:textColor="@color/white"
@@ -85,20 +85,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/input"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input"
+            style="@style/inputLineBottom"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:boxBackgroundColor="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/title"
+            app:startIconDrawable="@drawable/ic_lock_outline">
+
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="56dp"
-                app:startIconDrawable="@drawable/ic_error"
-                style="@style/inputLineBotoom"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/title">
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:textColorHint="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -106,7 +109,7 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:background="@color/white"
             android:gravity="center"
             android:text="acessar"
@@ -137,9 +140,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/bottom_menu"
-            app:itemBackground="@color/primary"
-            app:itemActiveIndicatorStyle="@color/primary"
+            android:background="@android:color/transparent"
+            app:itemActiveIndicatorStyle="@color/background"
             app:itemIconTint="@color/white"
             app:itemTextColor="@color/white"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
