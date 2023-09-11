@@ -97,17 +97,13 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn"
+    <include android:id="@+id/btn" layout="@layout/custom_bnt_primary"
             android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
             android:background="@color/white"
             android:gravity="center"
-            android:text="acessar"
-            android:textAllCaps="false"
-            android:textColor="@color/primary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
@@ -126,7 +122,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn" />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
+     <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="80dp"
             app:layout_constraintBottom_toBottomOf="parent"

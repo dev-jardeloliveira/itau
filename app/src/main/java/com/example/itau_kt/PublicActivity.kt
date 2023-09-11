@@ -1,6 +1,7 @@
 package com.example.itau_kt
 
 import android.graphics.Color
+import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -26,6 +27,11 @@ class PublicActivity : AppCompatActivity() {
                 binding.barTool.appBarLayout.setExpanded(false, true)
                binding.arrow.setImageResource(R.drawable.ic_arrow_collapse)
             }
+        }
+
+        binding.btn.layoutBtn.setOnClickListener {
+            binding.btn.textBtn.visibility =  android.view.View.GONE
+            binding.btn.progressBar.visibility =  android.view.View.VISIBLE
         }
 
     }
