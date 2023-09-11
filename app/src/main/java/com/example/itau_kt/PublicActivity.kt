@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.core.view.updateLayoutParams
 import com.example.itau_kt.databinding.ActivityPublicBinding
@@ -32,7 +33,10 @@ class PublicActivity : AppCompatActivity() {
         binding.btn.layoutBtn.setOnClickListener {
             binding.btn.textBtn.visibility =  android.view.View.GONE
             binding.btn.progressBar.visibility =  android.view.View.VISIBLE
+            binding.keyboard2.keyboard.visibility = View.VISIBLE
         }
+
+
 
     }
 }

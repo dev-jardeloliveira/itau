@@ -96,6 +96,16 @@
                 android:textColorHint="@color/white" />
         </com.google.android.material.textfield.TextInputLayout>
 
+    <include layout="@layout/custom_keyboard"
+        android:id="@+id/keyboard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input"/>
 
     <include android:id="@+id/btn" layout="@layout/custom_bnt_primary"
             android:layout_width="250dp"
@@ -107,7 +117,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/input" />
+            app:layout_constraintTop_toBottomOf="@+id/keyboard2" />
 
         <TextView
             android:id="@+id/pw"
