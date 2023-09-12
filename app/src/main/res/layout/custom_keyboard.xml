@@ -22,6 +22,7 @@
                 app:cardCornerRadius="10dp">
 
                 <TextView
+                    android:id="@+id/num1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -35,6 +36,7 @@
                 app:cardCornerRadius="10dp">
 
                 <TextView
+                    android:id="@+id/num2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -47,6 +49,7 @@
                 app:cardCornerRadius="10dp">
 
                 <TextView
+                    android:id="@+id/num3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -67,6 +70,7 @@
                 app:cardCornerRadius="10dp">
 
                 <TextView
+                    android:id="@+id/num4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -80,6 +84,7 @@
                 app:cardCornerRadius="10dp">
 
                 <TextView
+                    android:id="@+id/num5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -91,11 +96,12 @@
                 android:layout_height="45dp"
                 app:cardCornerRadius="10dp">
 
-                <TextView
+                <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="10dp"
                     android:gravity="center"
-                    android:text="Del" />
+                   android:src="@drawable/ic_backspace" />
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </LinearLayout>
