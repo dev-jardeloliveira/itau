@@ -79,7 +79,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input"
+            android:id="@+id/inputLayout"
             style="@style/inputLineBottom"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
@@ -88,12 +88,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/title"
-            app:startIconDrawable="@drawable/ic_lock_outline">
+            app:startIconDrawable="@drawable/ic_lock_outline"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:textColorHint="@color/white" />
+                android:textColorHint="@color/white"
+                android:inputType="numberPassword"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
     <include layout="@layout/custom_keyboard"
@@ -105,7 +109,7 @@
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input"/>
+        app:layout_constraintTop_toBottomOf="@+id/inputLayout"/>
 
     <include android:id="@+id/btn" layout="@layout/custom_bnt_primary"
             android:layout_width="250dp"
@@ -133,6 +137,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btn" />
 
      <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bntNavigation"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -144,4 +149,6 @@
             app:itemIconTint="@color/white"
             app:itemTextColor="@color/white"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

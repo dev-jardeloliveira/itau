@@ -2,6 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/pix"
         android:icon="@drawable/ic_pix2"
+        android:actionLayout="@layout/fragment_pix"
         android:title="Pix" />
     <item android:id="@+id/itoken"
         android:icon="@drawable/ic_itoken"

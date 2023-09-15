@@ -1,21 +1,19 @@
 package com.example.itau_kt
 
-import android.graphics.Color
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.core.view.updateLayoutParams
-import androidx.lifecycle.ViewModel
-import com.example.itau_kt.ViewModel.publicviewmodel
+import com.example.itau_kt.Model.KeyboardPassword
+import com.example.itau_kt.ViewModel.publicViewModel
 import com.example.itau_kt.databinding.ActivityPublicBinding
 
 class PublicActivity : AppCompatActivity() {
 
-    val  model: publicviewmodel by viewModels()
+    val  model: publicViewModel by viewModels()
     lateinit var binding: ActivityPublicBinding
+    private var list:MutableList<KeyboardPassword> = mutableListOf()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -23,14 +21,8 @@ class PublicActivity : AppCompatActivity() {
         var view = binding.root
         setContentView(view)
 
+        list = model.keyboard_number()
 
-          var list = model.keyboard_number()
-
-          binding.keyboard2.num1.text = list[0].toString()
-          binding.keyboard2.num2.text = list[1].toString()
-          binding.keyboard2.num3.text = list[2].toString()
-          binding.keyboard2.num4.text = list[3].toString()
-          binding.keyboard2.num5.text = list[4].toString()
 
         binding.arrow.setOnClickListener{
            if(binding.barTool.appBarLayout.top < 0){
@@ -44,13 +36,42 @@ class PublicActivity : AppCompatActivity() {
         }
 
         binding.btn.layoutBtn.setOnClickListener {
-            binding.btn.textBtn.visibility =  android.view.View.GONE
-            binding.btn.progressBar.visibility =  android.view.View.VISIBLE
-            binding.keyboard2.keyboard.visibility = View.VISIBLE
+            btnClickAcessar()
         }
 
 
+        binding.keyboard2.num1.setOnClickListener {
+          binding.input.text!!.append(list[0].text)
+        }
+        binding.keyboard2.num2.setOnClickListener {
+            binding.input.text!!.append(list[1].value.toString())
+        }
 
+
+    }
+
+    fun btnClickAcessar(){
+        binding.btn.textBtn.visibility =  android.view.View.GONE
+        binding.btn.progressBar.visibility =  android.view.View.VISIBLE
+        binding.keyboard2.keyboard.visibility = View.VISIBLE
+
+        Thread.sleep(5000)
+        getKeyboard()
+
+        binding.btn.layoutBtn.isEnabled = false
+        binding.btn.textBtn.visibility =  android.view.View.VISIBLE
+        binding.btn.progressBar.visibility =  android.view.View.GONE
+
+    }
+    fun getKeyboard(){
+        binding.keyboard2.num1.text = list[0].value.toString()
+        binding.keyboard2.num2.text = list[1].value.toString()
+        binding.keyboard2.num3.text = list[2].value.toString()
+        binding.keyboard2.num4.text = list[3].value.toString()
+        binding.keyboard2.num5.text = list[4].value.toString()
+    }
+    fun setInputPassword(number: Int){
+        binding.input.text!!.append(number.toString())
     }
 }
 
