@@ -7,6 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.PixFragment">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/two_sixty_hundred_dp"
+        android:background="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
@@ -32,6 +40,7 @@
         android:text="@string/pix"
         android:textSize="@dimen/thirty_dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
@@ -43,6 +52,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
+        android:textColor="@color/white"
         android:text="@string/pix_sub"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,108 +68,118 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/sixty_dp"
                 android:orientation="horizontal"
                 android:padding="@dimen/five_dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_error2"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/ten_dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pix_transfer"
-                    android:textSize="@dimen/fifteen_sp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/twenty_dp"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_arrow_up"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:src="@drawable/ic_error2" />
+
+                <TextView
+                    android:layout_width="@dimen/one_hundred_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/twenty_dp"
+                    android:text="@string/pix_transfer"
+                    android:textSize="@dimen/fifteen_sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/one_seventy_hundred_dp"
                     android:rotation="90"
-                    android:layout_marginStart="@dimen/two_hundred_dp"/>
+                    android:src="@drawable/ic_arrow_up" />
             </LinearLayout>
+
             <View
-                android:layout_width="409dp"
+                android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="346dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/sixty_dp"
                 android:orientation="horizontal"
                 android:padding="@dimen/five_dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_error2"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/ten_dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pix_transfer"
-                    android:textSize="@dimen/fifteen_sp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/twenty_dp"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_arrow_up"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:src="@drawable/ic_qrcode" />
+
+                <TextView
+                    android:layout_width="@dimen/one_hundred_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/twenty_dp"
+                    android:text="@string/pix_qr_pay"
+                    android:textSize="@dimen/fifteen_sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/one_seventy_hundred_dp"
                     android:rotation="90"
-                    android:layout_marginStart="@dimen/two_hundred_dp"/>
+                    android:src="@drawable/ic_arrow_up" />
             </LinearLayout>
+
             <View
-                android:layout_width="409dp"
+                android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="346dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/sixty_dp"
                 android:orientation="horizontal"
                 android:padding="@dimen/five_dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_error2"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/ten_dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pix_transfer"
-                    android:textSize="@dimen/fifteen_sp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/twenty_dp"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_arrow_up"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:src="@drawable/ic_arrow_circle" />
+
+                <TextView
+                    android:layout_width="@dimen/one_hundred_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/twenty_dp"
+                    android:text="@string/pix_demand"
+                    android:textSize="@dimen/fifteen_sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/one_seventy_hundred_dp"
                     android:rotation="90"
-                    android:layout_marginStart="@dimen/two_hundred_dp"/>
+                    android:src="@drawable/ic_arrow_up" />
             </LinearLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
