@@ -12,4 +12,11 @@
         <item name="boxStrokeWidth">2dp</item>
         <item name="startIconTint">@color/white</item>
     </style>
+    <style name="Base.CardView.Help" parent="Base.CardView">
+        <item name="cornerRadius">@dimen/five_dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/one_seventy_hundred_dp</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
 </resources>
