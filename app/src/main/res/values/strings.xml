@@ -43,7 +43,8 @@
     <string name="help_card_other_app_itau">Itaú Personnalité</string>
     <string name="help_card_other_app_itaucard">Itaucard</string>
     <string name="help_card_other_app_open">abrir</string>
-    <string name="help_card_other_app_install">instalar</string>
+    <string name="help_card_other_app_install"><u><b>instalar</b></u></string>
+    <string name="help_card_other_app_gratis"><b>grátis</b></string>
     <string name="help_card_other_app_more">ver mais apps</string>
     <string name="help_card_more_securet">esse aplicativo é seguro?</string>
     <string name="help_card_more_term">termo de uso</string>
