@@ -438,7 +438,8 @@
                 android:text="@string/help_sub5"
                 android:textSize="@dimen/fifteen_sp" />
 
-
+            <include layout="@layout/card_more_option" />
+            <include layout="@layout/footer_help" />
         </LinearLayout>
     </ScrollView>
 

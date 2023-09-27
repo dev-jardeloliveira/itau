@@ -50,7 +50,9 @@
     <string name="help_card_more_term">termo de uso</string>
     <string name="help_card_more_consum_protect">órgãos de defesa do consumidor</string>
     <string name="version">versão</string>
+    <string name="version_num">7.040.0</string>
     <string name="update">atualização em</string>
+    <string name="update_date">01/10/2023</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

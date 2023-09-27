@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/pix"
+    <item android:id="@+id/pixFragment"
         android:icon="@drawable/ic_pix2"
-        android:actionLayout="@layout/fragment_pix"
         android:title="Pix" />
-    <item android:id="@+id/itoken"
+    <item android:id="@+id/itokenFragment"
         android:icon="@drawable/ic_itoken"
         android:title="iToken"/>
-    <item android:id="@+id/help"
+    <item android:id="@+id/helpFragment"
         android:icon="@drawable/ic_help"
         android:title="ajuda"/>
 </menu>
