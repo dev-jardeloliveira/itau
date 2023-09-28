@@ -7,13 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.itau_kt.R
+import com.example.itau_kt.databinding.FragmentPixBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 
 class PixFragment : Fragment() {
+
+    private var binding: FragmentPixBinding?=null
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -24,11 +24,22 @@ class PixFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        binding = FragmentPixBinding.inflate(inflater,container,false)
+        val view = binding!!.root
 
-        return inflater.inflate(R.layout.fragment_pix, container, false)
+        Init()
+        BackButtom()
+        return view
     }
-
-    companion object {
-
+    private fun Init(){
+        val menu = activity?.findViewById<BottomNavigationView>(R.id.bntNavigation)
+        menu?.visibility = View.INVISIBLE
+    }
+    private fun BackButtom(){
+        binding?.toolbarPIX?.setOnClickListener {
+            val menu = activity?.findViewById<BottomNavigationView>(R.id.bntNavigation)
+            menu?.visibility = View.VISIBLE
+            requireActivity().onBackPressed()
+        }
     }
 }

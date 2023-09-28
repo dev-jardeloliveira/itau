@@ -15,7 +15,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class PublicActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
-
     val  model: publicViewModel by viewModels()
     lateinit var binding: ActivityPublicBinding
     private var list:MutableList<KeyboardPassword> = mutableListOf()
@@ -30,6 +29,7 @@ class PublicActivity : AppCompatActivity() {
        navController = navHostController.navController
         val bottoNavigatioView = findViewById<BottomNavigationView>(R.id.bntNavigation)
         NavigationUI.setupWithNavController(bottoNavigatioView, navController)
+
 
      //   list = model.keyboard_number()
 
@@ -59,6 +59,7 @@ class PublicActivity : AppCompatActivity() {
 */
 
     }
+
 
   /*  fun btnClickAcessar(){
         binding.btn.textBtn.visibility =  android.view.View.GONE
