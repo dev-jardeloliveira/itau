@@ -98,9 +98,11 @@
                 app:cardCornerRadius="10dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:id="@+id/backspace"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="13dp"
                     android:gravity="center"
                    android:src="@drawable/ic_backspace" />
             </androidx.cardview.widget.CardView>
